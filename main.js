@@ -3,7 +3,18 @@ SC.initialize({
 });
 
 $(document).ready(function() {
-  SC.stream('/tracks/271004119',function(sound){
+  SC.stream('/tracks/299479465',function(sound){
+    $('#start-e1').click(function(e) {
+           e.preventDefault();
+           sound.start();
+         });
+    $('#stop-e1').click(function(e) {
+           e.preventDefault();
+           sound.stop();
+        });
+  });
+
+  SC.stream('/tracks/299479465',function(sound){
     $('#start').click(function(e) {
            e.preventDefault();
            sound.start();
@@ -13,4 +24,26 @@ $(document).ready(function() {
            sound.stop();
         });
   });
+
+  SC.stream('/tracks/271004119',function(sound){
+    $('#start').click(function(e) {
+           e.preventDefault();
+           sound.start();
+         });
+    $('#stop').click(function(e) {
+           e.preventDefault();
+           sound.stop();
+        });
+
+
+  });  SC.stream('/tracks/271004119',function(sound){
+      $('#start').click(function(e) {
+             e.preventDefault();
+             sound.start();
+           });
+      $('#stop').click(function(e) {
+             e.preventDefault();
+             sound.stop();
+          });
+    });
 });
