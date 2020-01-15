@@ -65,5 +65,35 @@ $(document).ready(function() {
                  sound.stop();
               });
         });
+        SC.stream('/tracks/225519099',function(sound){
+            $('#start-t1').click(function(e) {
+                   e.preventDefault();
+                   sound.start();
+                 });
+            $('#stop-t1').click(function(e) {
+                   e.preventDefault();
+                   sound.stop();
+                });
+          });
+          SC.stream('/tracks/211453128',function(sound){
+              $('#start-t2').click(function(e) {
+                     e.preventDefault();
+                     sound.start();
+                   });
+              $('#stop-t2').click(function(e) {
+                     e.preventDefault();
+                     sound.stop();
+                  });
+            });
+            SC.stream('/tracks/255389574',function(sound){
+                $('#start-t3').click(function(e) {
+                       e.preventDefault();
+                       sound.start();
+                     });
+                $('#stop-t3').click(function(e) {
+                       e.preventDefault();
+                       sound.stop();
+                    });
+              });
 
 });
