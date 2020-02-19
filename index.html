@@ -16,13 +16,38 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <script src="jquery-3.4.1.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 <body>
   <!-- #### header###### -->
-  <header>
-  <center><h1>Hello Everyone, Welcome to my music player...</h1></center>
-</header>
+  <div class="main_menu opacity-2">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background-color:rgb(25, 105, 46,0.7)">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h " href="index.html">  <img src="img/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="hindi.html">Hindi गीत (Songs)</a></li>
+            <li class="nav-item"><a class="nav-link" href="english.html">English Songs</a></li>
+            <li class="nav-item"><a class="nav-link" href="tamil.html">Tamil பாடல் (Songs)</a></li>
+            <li class="nav-item"><a class="nav-link" href="korean.html">Korean 노래 (Songs)</a></li>
+            <li class="nav-item"><a class="nav-link" href="sinhala.html">Sinhala ගීත(Songs)</a></li>
+            <li class="nav-item"><a class="nav-link" href="a_rap.html">American rap</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 <!-- ##### Song Language Area Start ##### -->
 <section class="events-area section-padding-100">
     <div class="container">
@@ -35,7 +60,7 @@
                         <img src="img/bg-img/e1.jpg" alt="">
                     </div>
                     <div class="event-text">
-                        <h4>Tamil</h4>
+                        <h4>Tamil பாடல்</h4>
                         <div class="event-meta-data">
                             <a href="tamil.html" class="event-place">Listen to Tamil songs</a>
                             <a href="tamil.html" class="event-date">Click here</a>
@@ -52,7 +77,7 @@
                         <img src="img/bg-img/e2.jpg" alt="">
                     </div>
                     <div class="event-text">
-                        <h4>Hindi</h4>
+                        <h4>Hindi गीत</h4>
                         <div class="event-meta-data">
                             <a href="hindi.html" class="event-place">Listen to Hindi songs</a>
                             <a href="hindi.html" class="event-date">Click here</a>
@@ -78,9 +103,63 @@
                     </div>
                 </div>
             </div>
+
+            <!--  Song Language Area -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="img/bg-img/e4.jpg" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Korean 노래</h4>
+                        <div class="event-meta-data">
+                            <a href="hindi.html" class="event-place">Listen to Korean songs</a>
+                            <a href="hindi.html" class="event-date">Click here</a>
+                        </div>
+                        <a href="hindi.html" class="btn see-more-btn">Hindi lovers</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--  Song Language Area -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="img/bg-img/e5.jpg" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Sinhala ගීත</h4>
+                        <div class="event-meta-data">
+                            <a href="hindi.html" class="event-place">Listen to Hindi songs</a>
+                            <a href="hindi.html" class="event-date">Click here</a>
+                        </div>
+                        <a href="hindi.html" class="btn see-more-btn">Hindi lovers</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="single-event-area mb-30">
+                    <div class="event-thumbnail">
+                        <img src="img/bg-img/e6.jpeg" alt="">
+                    </div>
+                    <div class="event-text">
+                        <h4>Africaans liedjies</h4>
+                        <div class="event-meta-data">
+                            <a href="hindi.html" class="event-place">Listen to Hindi songs</a>
+                            <a href="hindi.html" class="event-date">Click here</a>
+                        </div>
+                        <a href="hindi.html" class="btn see-more-btn">Hindi lovers</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <!-- ##### Song Language Area End ##### -->
+
 </body>
 </html>
